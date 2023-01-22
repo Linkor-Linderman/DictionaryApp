@@ -1,7 +1,8 @@
-package com.example.dictionaryapp.ui.theme
+package com.example.dictionaryapp.feature_dictionary.presentation.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme
+import androidx.compose.material.MaterialTheme.colors
 import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
@@ -32,11 +33,8 @@ fun DictionaryAppTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {
-    val colors = if (darkTheme) {
-        DarkColorPalette
-    } else {
-        LightColorPalette
-    }
+
+    LightColorPalette
 
     MaterialTheme(
         colors = colors,
